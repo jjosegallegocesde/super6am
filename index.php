@@ -1,7 +1,7 @@
 <?php   
 
 
-$producto1='carne';
+$producto1='atun';
 $producto2='arroz';
 $producto3='arepas';
 $producto4='chocolate';
