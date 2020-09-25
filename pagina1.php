@@ -67,30 +67,13 @@
 
                        $costoEnvio=8000;
 
+
                        $total=$precioProducto1+$costoEnvio;
 
                        echo("El total de la compra es de: ".$total);
                     }
                 
                 ?>
-
-
-             <!-- esto es la opcion b -->
-
-                <!--<?php  if(isset($_POST["botonCalcular"])): ?>
-                
-                
-    
-                <h4>
-                <?php 
-                
-                ?>
-                
-                </h4>
-                
-                <?php endif ?> -->
-
-              
 
 
                </div> 
