@@ -12,6 +12,8 @@
 
     <?php 
 
+    //id nombre apellido cedula telefono direccion contraseña
+
     $productos=array(
         "producto1"=>array("arroz",1600,"caribe"),
         "producto2"=>array("salchichas",4500,"zenu"),
