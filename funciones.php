@@ -18,6 +18,8 @@ function saludar($nombre){
 echo(saludar("suanfonson"));
 saludar("Juan");
 
+//sume 2 numeros
+//programa principal necesito utilizar esa suma y multiplicar por 2
 
 
 
