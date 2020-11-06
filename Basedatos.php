@@ -48,6 +48,26 @@ class Basedatos{
 
         }
 
+    }
+
+    public function consultarDatos($consultaSQL){
+
+        //1.Se debe establecer una conexion a BD
+        $conexionBD=$this->conectarBD();
+
+        //2.Preparar la consulta para insertar datos
+        $consultaBuscarDatos=$conexionBD->prepare($consultaSQL);
+
+        //3.Indicar el metodo para tarer los datos
+        $consultaBuscarDatos->setFetchMode(PDO::FETCH_ASSOC);
+
+        //4.Se ejecuta la consulta
+        $resultado=$consultaBuscarDatos->execute();
+
+        //5.RETORNE LOS DATOS CONSULTADOS
+        return($consultaBuscarDatos->fetchAll());
+
+
 
 
 

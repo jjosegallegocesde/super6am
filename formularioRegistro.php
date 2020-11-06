@@ -49,6 +49,26 @@
                 <button type="submit" class="btn btn-info btn-block" name="botonEnvio">Registrar</button>
             </form>
         </div>
+
+        <?php 
+        
+            include("Basedatos.php");
+            
+            //1. crear una copia de la clase BD
+            //crear un objeto de la clase bd
+            $transaccion=new Basedatos();
+
+            //2.Crear la consulta para buscar datos
+            $consultaSQL="SELECT * FROM usuarios WHERE 1";
+
+            //3.Utilizar el metodo consultarDatos
+            $usuarios=$transaccion->consultarDatos($consultaSQL);
+
+            print_r($usuarios);
+        
+        
+        
+        ?>
     
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
