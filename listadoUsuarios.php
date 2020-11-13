@@ -34,7 +34,7 @@
 
                 <div class="col mb-4">
                     <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="<?php echo($usuario["foto"])?>" class="card-img-top" alt="FOTO">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo($usuario["nombre"])?></h5>
                             <p class="card-text"><?php echo($usuario["descripcion"])?></p>
