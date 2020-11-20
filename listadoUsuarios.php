@@ -56,16 +56,16 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                   <form action="">
+                                   <form action="editarUsuario.php?id=<?php echo($usuario["idUsuario"]) ?>" method="POST">
                                         <div class="form-group">
                                             <label>Nombre:</label>
-                                            <input type="text" class="form-control" value="<?php echo($usuario["nombre"])?>">
+                                            <input type="text" class="form-control" name="nombreEditar" value="<?php echo($usuario["nombre"])?>">
                                         </div>
                                         <div class="form-group">
                                             <label>Descripcion:</label>
-                                            <textarea class="form-control"rows="3"><?php echo($usuario["descripcion"])?></textarea>
+                                            <textarea class="form-control"rows="3" name="descripcionEditar"><?php echo($usuario["descripcion"])?></textarea>
                                         </div>
-                                        <button type="submit" class="btn btn-info">Editar</button>
+                                        <button type="submit" class="btn btn-info" name="botonEditar">Editar</button>
                                    </form>
                                 </div>
                                 

@@ -20,6 +20,9 @@
 
         //4. Utilizar el metodo agregarDatos()
         $transaccion->agregarDatos($consultaSQL);
+
+        //5. Redireccion a la vista que necesite
+        header("location:formularioRegistro.php");
                
     }
 
